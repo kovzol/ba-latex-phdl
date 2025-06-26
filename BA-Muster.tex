@@ -9,6 +9,9 @@
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{natbib}
+\usepackage{hyperref}
+
+\sloppy
 
 \onehalfspacing
 
@@ -49,7 +52,7 @@ margin=2.5cm,top=1.5cm,includeheadfoot]{geometry}
 \oddsidemargin 0.1cm
 \parindent 0pt
 
-\def\title{4D Druck im Unterricht:\\ Fraktale}
+\def\title{4D Druck im Unterricht:\\ Fraktale in der Unterstufe}
 \def\name{A.~B.~Conrad Dachsteiner}
 \def\institute{Institut für \\Didaktik der Mathematik}
 \def\supervisor{Dr.~Zoltán Kovács}
@@ -119,12 +122,25 @@ www.jku.at\\ DVR 0093696
 \rmfamily
 
 \loadgeometry{saved}
-\pagestyle{plain}
+\pagestyle{empty}
 \newpage{}
 \begin{center}
 \vspace*{0.3\paperheight}
 Für meine geliebte Mama
 \par\end{center}
+
+\chapter*{Kurzfassung}
+
+\lipsum[1]
+
+\vskip2cm
+
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+\chapter*{Abstract}
+\lipsum[2]
+\endgroup
 
 \begin{center}
 \thispagestyle{empty}\newpage\tableofcontents{}
@@ -175,5 +191,35 @@ ISBN 3-453-14698-0. Originalveröffentlichung 1980. Veröffentlichung
 der deutschen Übersetzung 1983.
 
 \end{thebibliography}
+
+\appendix % Anhang
+
+% ---------------------------------------------------------
+\chapter*{Erklärung} % Eidesstattliche Erklärung
+% ---------------------------------------------------------
+
+Hiermit erkläre ich an Eides statt, dass ich diese Arbeit eigenständig
+verfasst habe. Direkte und indirekte Zitate (Texte als auch Abbildungen)
+sind unter Angabe der Quelle nach den Regeln des wissenschaftlichen
+Zitierens und der guten wissenschaftlichen Praxis kenntlich gemacht.
+Dies schließt auch verwendete Abbildungen ein.
+
+Bei Verwendung von Künstlicher Intelligenz sind die entsprechenden
+Anwendungen mit ihrem Produktnamen und der in dieser Arbeit verwendeten
+Funktionen im Folgenden vollständig dokumentiert.
+
+Ich bin mir darüber im Klaren, dass ich als Autor allein für den Inhalt
+verantwortlich bin. Das Urheberrecht sowie alle damit verbundenen Rechte
+an Text, Struktur, Inhalt und Bilder verbleiben bei mir.
+
+Zur (sprachlichen) Überarbeitung wurden folgende Software- und KI-gestützte Anwendungen genutzt:
+
+\begin{itemize}
+    \item Overleaf: zur Überprüfung der Rechtschreibung
+    \item Microsoft Word: zur Überprüfung der Rechtschreibung und Grammatik
+    \item DeepL Write: zur stilistischen Optimierung von Formulierungen und Überprüfung der Rechtschreibung und Grammatik
+    \item OpenAI ChatGPT: zur stilistischen Optimierung von Formulierungen und Überprüfung der Rechtschreibung und Grammatik
+\end{itemize}
+
 
 \end{document}
